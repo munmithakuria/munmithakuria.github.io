@@ -1,166 +1,160 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
 
-<html>
-	<head>
-		<title>My Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Portfolio">
+    <meta name="author" content="Your Name">
+    <title>Your Name - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
 
-		<!-- Header -->
-			<section id="header">
-				<div class="inner">
-					<h1>Hi, I'm <strong>Munmi Thakuria</strong>, a software engineer<br />
-					having experience of 5+ years in the industry.</h1>
-					<h4>I worked as a DevOps Engineer in the Core Engineering Team.</h4>
-					<ul class="actions special">
-						<li><a href="#one" class="button scrolly">Discover</a></li>
-					</ul>
-				</div>
-			</section>
-		<!-- One -->
-		<section id="one" class="main style1">
-			<div class="container">
-				<div class="row gtr-150">
-					<div class="col-6 col-12-medium">
-						<header class="major">
-							<h2>Publication</h2>
-						</header>
-						<p> Paper was accepted at the 2024 IEEE International Conference on Big Data
-						
-					</div>
-					<div class="col-6 col-12-medium imp-medium">
-						<li><a href="https://ieeexplore.ieee.org/abstract/document/10825434"<h4>Deep Learning Models for Diabetic Retinopathy Detection: A Comparative Study</h4></a></li>
-						<p>
-						<ul class="actions special">
-							<li><a href="#two" class="button scrolly">Keep going :) </a></li>
-						</ul>
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
+        header {
+            background-color: #1f2937;
+            color: white;
+            padding: 2rem 0;
+        }
 
-		<!-- Two -->
-			<section id="two" class="main style2">
-				<div class="container">
-					<div class="row gtr-150">
-						<div class="col-6 col-12-medium">
-							<ul class="major-icons">
-								<li><span class="image fit"><img src="https://www.eginnovations.com/blog/wp-content/uploads/2019/10/devops-stages.png" alt="" /></span></li>
-								
-								
-							</ul>
-						</div>
-						<div class="col-6 col-12-medium">
-							<header class="major">
-								<h2>Technical Skills</h2>
-							</header>
-							<p>I have worked on Python and Bash scripting.<br> CICD pipelines<br>Written Docker files for Docker Image Creation
-							<br>Configured and deployed AWS services.
-							<br>Worked on GIT
-							<br>Automated Jobs through Jenkins</p>
-							<ul class="actions special">
-								<li><a href="#teamproject" class="button scrolly">Team Project</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
 
-		<!-- team project -->
-		<section id="teamproject" class="main style1 special">
-			<div class="container">
-				<header class="major">
-					<h2>Team Project</h2>
-				</header>
-				<div class="row gtr-150">
-					<div class="col-4 col-12-medium">
-						<h3>Color Generator Website</h3>
-						<p>We are developing an user friendly web application which will allow users to generate and choose colors from the palette.<br>The website will allow the users to preview and auto-adjust the generated colors.
-						<br>Users can also copy the color values and save them for future reference. The application will provide a platform even for the users who doesn't have much understanding on color theories, where they will get the information about color combinations they should or shouldn't use in the palette. The information will be based on the Web Content Accissibility Guidelines for educational purposes.
-						</p>
-					
-					</div>
-					<div class="col-4 col-12-medium">
-						<h3>Technologies/Libraries/Tools</h3>
-						<p>React,Axios,JEST,AwesomeIcons,Bootstrap,StackBlitz
-						<br>Visual Studio Code,Postman,NPM,React Router,Google Docs/Microsoft Office,Adobe Acrobat</p>
-					</div>
-					<div class="col-4 col-12-medium">
-						<h3>Team GitHub link</h3>
-						<ul class="icons">
-							<li><a href="https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</div>
-					<ul class="actions special">
-						<li><a href="#three" class="button scrolly">More Projects!</a></li>
-					</ul>
-				</div>
-			</div>
-		</section>
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
 
+        .skills, .projects {
+            margin-bottom: 2rem;
+        }
 
-		<!-- Three -->
-			<section id="three" class="main style1 special">
-				<div class="container">
-					<header class="major">
-						<h2>Projects</h2>
-					</header>
-					<div class="row gtr-150">
-						<div class="col-4 col-12-medium">
-							<h3>Classification of Hyperspectral Images</h3>
-							<p>"Classification of Hyperspectral Images using Supervised and Unsupervised Machine Learning Algorithms". In this project, I worked with satellite images with more than hundreds of bands and designed algorithms for extracting only the relevant bands for classification purposes and then designed models to classify the objects and was able to achieve high accuracy.
-							<br>Technology: MATLAB version R2016a</p>
-						
-						</div>
-						<div class="col-4 col-12-medium">
-							<h3>Banking Management System</h3>
-							<p>Developed an application software to make the system easy to monitor and almost error free. Less paperwork.
-							<br>Technology:JavaScript, MySQL</p>
-							
-						</div>
-						<div class="col-4 col-12-medium">
-							<h3>Quiz Master Game</h3>
-							<p>Developed an application to play quiz games where questions get stored in a file along with answers and the question should be asked randomly. It is unlike the manual system where all the burdens were upon the quiz master.
-							<br>Technology:C++</p>
-							
-						</div>
-						<ul class="actions special">
-							<li><a href="#footer" class="button scrolly">Contact ME!</a></li>
-						</ul>
-					</div>
-				</div>
-			</section>
+        .card {
+            background: #f9fafb;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
 
+        footer {
+            background-color: #f3f4f6;
+            padding: 2rem 0;
+            text-align: center;
+        }
+    </style>
+</head>
 
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container text-center">
+            <h1 class="text-4xl font-bold">Your Name</h1>
+            <p class="text-lg">DevOps Engineer | Cloud Solutions | Automation Expert</p>
+        </div>
+    </header>
 
+    <!-- About Section -->
+    <section id="about" class="container py-8">
+        <h2 class="section-title text-2xl">About Me</h2>
+        <p>
+            I have over 5+ years of experience in DevOps practices, automation, cloud services, and a strong academic background in computer science. In my previous role, I developed and implemented CI/CD pipelines for AWS components, migrated over 25 components from on-prem environments to AWS, and worked extensively with Docker, Kubernetes, and AWS services like EC2, S3, auto-scaling, and DynamoDB. 
+        </p>
+        <p>
+            I have worked with top US financial clients such as Bank of America, JP Morgan, Wells Fargo, Prudential, and Fidelity Investments during my time at Envestnet Yodlee. I later moved to TATA Consultancy Services (TCS), where I worked on large-scale cloud and automation projects.
+        </p>
+    </section>
 
+    <!-- Skills Section -->
+    <section id="skills" class="container py-8">
+        <h2 class="section-title text-2xl">Skills</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="card">
+                <h3 class="font-bold">Programming</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>Bash</li>
+                    <li>Groovy</li>
+                    <li>Shell scripting</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3 class="font-bold">DevOps Tools</h3>
+                <ul>
+                    <li>Docker</li>
+                    <li>Kubernetes</li>
+                    <li>Jenkins</li>
+                    <li>GitLab</li>
+                    <li>CI/CD Framework</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3 class="font-bold">Cloud</h3>
+                <ul>
+                    <li>AWS (EC2, S3, DynamoDB)</li>
+                    <li>Auto-Scaling</li>
+                    <li>Cloud Migration</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3 class="font-bold">Databases</h3>
+                <ul>
+                    <li>SQL</li>
+                    <li>Redis</li>
+                    <li>MongoDB</li>
+                    <li>Oracle</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-		<!-- Footer -->
-			<section id="footer">
-				<ul class="icons">
-					<li><a href="https://www.linkedin.com/in/munmi-thakuria-95934812b/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-					<li><a href="https://github.com/munmithakuria" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="mailto:munmithakuria14@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-				</ul><ul class="actions special">
-					<li><a href="https://docs.google.com/document/d/1T7YccuEPp6-1R78zgX0TOEtpCr4s_BMsQigOqlBaTuU/edit?usp=sharing" class="button scrolly">Know More!</a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</section>
+    <!-- Projects Section -->
+    <section id="projects" class="container py-8">
+        <h2 class="section-title text-2xl">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="card">
+                <h3 class="font-bold">Interactive Web-based Quiz Application</h3>
+                <p>
+                    A web-based interactive quiz application, where the app generates questions along with four options based on the topics specified by the user. The questions are fetched dynamically from the OpenAI API. Developed using React, NodeJS, Tailwind CSS.
+                </p>
+            </div>
+            <div class="card">
+                <h3 class="font-bold">Color Generator Website</h3>
+                <p>
+                    A user-friendly web application to generate and adjust color palettes for design use, developed with ReactJS and CSS. Users can preview and auto-adjust the colors' intensities and contrasts.
+                </p>
+            </div>
+            <div class="card">
+                <h3 class="font-bold">Hyper-spectral Image Classification</h3>
+                <p>
+                    A MATLAB project to classify satellite images using supervised machine learning algorithms. Developed an algorithm to extract relevant bands for classification and achieved high accuracy in identifying objects in hyper-spectral images.
+                </p>
+            </div>
+            <div class="card">
+                <h3 class="font-bold">Banking Management System</h3>
+                <p>
+                    Developed a banking management system using JavaScript for the frontend and MySQL for the backend. The system simplifies monitoring and reduces errors, minimizing the need for paperwork.
+                </p>
+            </div>
+        </div>
+    </section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    <!-- Publications Section -->
+    <section id="publications" class="container py-8">
+        <h2 class="section-title text-2xl">Publications</h2>
+        <p>
+            <a href="https://ieeexplore.ieee.org/abstract/document/10825434" target="_blank" class="text-blue-600">IEEE Big Data Conference 2024 - Diabetic Retinopathy Detection</a>
+        </p>
+    </section>
 
-	</body>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+
 </html>
