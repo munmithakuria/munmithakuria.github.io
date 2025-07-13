@@ -1,336 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio">
-    <meta name="author" content="Munmi Thakuria">
-    <title>Munmi Thakuria</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
-
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f7fafc;
-            color: #333;
-            line-height: 1.6;
-            background-image: url('images/pexels-apasaric-325185.jpg');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-        }
-
-        .sidebar {
-            width: 250px;
-            background-color: rgba(45, 55, 72, 0.8);
-            position: sticky;
-            top: 0;
-            height: 100vh;
-            padding-top: 2rem;
-            color: white;
-            font-size: 1.1rem;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: flex-start;
-            margin-right: 2rem;
-        }
-
-        .sidebar a {
-            color: white;
-            text-decoration: none;
-            padding: 1rem;
-            width: 100%;
-            transition: background-color 0.3s;
-        }
-
-        .sidebar a:hover {
-            background-color: #3182ce;
-        }
-
-        .content {
-            flex-grow: 1;
-            padding: 3rem 2rem;
-            width: 100%;
-        }
-
-        header {
-            background-color: rgba(45, 55, 72, 0.7);
-            color: white;
-            padding: 3rem 0;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 3rem;
-            font-weight: 700;
-        }
-
-        header p {
-            font-size: 1.2rem;
-        }
-
-        .section-title {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-            font-weight: 600;
-        }
-
-        .card {
-            background: #fff;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-        }
-
-        footer {
-            background-color: #edf2f7;
-            padding: 2rem 0;
-            text-align: center;
-        }
-
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 1rem;
-            border-radius: 8px;
-            border: 1px solid #ccc;
-            margin-bottom: 1rem;
-            font-size: 1rem;
-        }
-
-        .contact-form button {
-            background-color: #2b6cb0;
-            color: white;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            font-size: 1.2rem;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .contact-form button:hover {
-            background-color: #3182ce;
-        }
-
-        .social-icons a {
-            font-size: 2rem;
-            margin: 0 1rem;
-            color: #2d3748;
-            transition: color 0.3s ease;
-        }
-
-        .social-icons a:hover {
-            color: #3182ce;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                width: 90%;
-            }
-
-            .sidebar {
-                width: 100%;
-                position: relative;
-                height: auto;
-                padding-top: 1rem;
-            }
-
-            .content {
-                margin-left: 0;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio" />
+  <meta name="author" content="Munmi Thakuria" />
+  <title>Munmi Thakuria</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: "Roboto", sans-serif;
+      background-color: #f7fafc;
+      color: #333;
+      line-height: 1.6;
+      background-image: url("images/pexels-apasaric-325185.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+    }
+    .sidebar {
+      width: 250px;
+      background-color: rgba(45, 55, 72, 0.8);
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      padding-top: 2rem;
+      color: white;
+      font-size: 1.1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin-right: 2rem;
+    }
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      padding: 1rem;
+      width: 100%;
+      transition: background-color 0.3s;
+    }
+    .sidebar a:hover {
+      background-color: #3182ce;
+    }
+    .content {
+      flex-grow: 1;
+      padding: 3rem 2rem;
+      width: 100%;
+    }
+    header {
+      background-color: rgba(45, 55, 72, 0.7);
+      color: white;
+      padding: 3rem 0;
+      text-align: center;
+      position: relative;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    .btn-download {
+      display: inline-block;
+      margin-top: 1rem;
+      background-color: #3182ce;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .btn-download:hover {
+      background-color: #2b6cb0;
+    }
+    .section-title {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    .card {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    }
+    .badge {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background-color: #3182ce;
+      color: white;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #edf2f7;
+      padding: 2rem 0;
+      text-align: center;
+    }
+    .social-icons a {
+      font-size: 2rem;
+      margin: 0 1rem;
+      color: #2d3748;
+      transition: color 0.3s ease;
+    }
+    .social-icons a:hover {
+      color: #3182ce;
+    }
+    @media (max-width: 768px) {
+      .container {
+        width: 90%;
+      }
+      .sidebar {
+        width: 100%;
+        position: relative;
+        height: auto;
+        padding-top: 1rem;
+      }
+      .content {
+        margin-left: 0;
+      }
+    }
+  </style>
 </head>
-
-
 <body>
-    <div class="sidebar">
-        <a href="#about">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#publications">Publications</a>
-        <a href="#projects">Projects</a>
-    </div>
+  <div class="sidebar">
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#intern">Internship</a>
+    <a href="#education">Education</a>
+    <a href="#awards">Awards</a>
+    <a href="#publications">Publications</a>
+    <a href="#projects">Projects</a>
+  </div>
+  <div class="content">
+    <header>
+      <div class="container">
+        <h1>Munmi Thakuria</h1>
+        <p>DevOps Engineer | Deep Learning Researcher | AI in Healthcare</p>
+        <a
+          href="files/Munmi_Thakuria_Resume.pdf"
+          class="btn-download"
+          download
+          >Download Resume</a
+        >
+      </div>
+    </header>
 
-    <div class="content">
-        <!-- Header Section -->
-        <header>
-            <div class="container">
-                <h1>Munmi Thakuria</h1>
-                <p>DevOps Engineer | Deep Learning Researcher | AI in Healthcare</p>
-            </div>
-        </header>
-
-        <!-- About Section -->
-        <section id="about" class="container py-8">
-            <h2 class="section-title">About Me</h2>
-            <p>
-                I have over 5+ years of experience in DevOps practices, automation, cloud services, and a strong academic background in computer science. In my previous role, I developed and implemented CI/CD pipelines for AWS components, migrated over 25 components from on-prem environments to AWS, and worked extensively with Docker, Kubernetes, and AWS services like EC2, S3, auto-scaling, and DynamoDB.
-            </p>
-            <p>
-                I have worked with top US financial clients such as Bank of America, JP Morgan, Wells Fargo, Prudential, and Fidelity Investments during my time at Envestnet Yodlee. I later moved to TATA Consultancy Services (TCS), where I worked on large-scale cloud and automation projects.
-            </p>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="container py-8">
-            <h2 class="section-title">Skills</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="card">
-                    <h3 class="font-bold text-xl">Programming</h3>
-                    <ul>
-                        <li>Python</li>
-                        <li>Bash / Shell Scripting</li>
-                        <li>Groovy</li>
-			<li>YAML</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3 class="font-bold text-xl">DevOps Tools</h3>
-                    <ul>
-                        <li>Docker</li>
-                        <li>Kubernetes</li>
-                        <li>Jenkins</li>
-                        <li>GitLab</li>
-                        <li>CI/CD Framework</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3 class="font-bold text-xl">Cloud</h3>
-                    <ul>
-                        <li>AWS (EC2, S3, DynamoDB)</li>
-                        <li>Auto-Scaling</li>
-                        <li>Cloud Migration</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3 class="font-bold text-xl">Databases</h3>
-                    <ul>
-                        <li>SQL</li>
-                        <li>Redis</li>
-                        <li>MongoDB</li>
-                        <li>Oracle</li>
-                    </ul>
-                </div>
-	        <div class="card">
-                    <h3 class="font-bold text-xl">Data Analytics</h3>
-            	    <ul>
-                	<li>Tableau</li>
-                	<li>R (Statistical Analysis)</li>
-            	    </ul>
-                </div>   
-	        <div class="card">
-            	    <h3 class="font-bold text-xl">Machine Learning Libraries</h3> <!-- Changed to Machine Learning Libraries -->
-                    <ul>
-               		 <li>TensorFlow</li>
-                	  <li>scikit-learn (sklearn)</li>
-                          <li>Matplotlib</li>
-                          <li>NumPy</li>
-                          <li>Pandas</li>
-                   </ul>
-                </div>
-               </div>
-        </section>
-    <section id="publications" class="container py-8">
-        <h2 class="section-title text-2xl">Publications</h2>
+    <section id="intern" class="container py-8">
+      <h2 class="section-title">Internship Experience</h2>
+      <div class="card">
+        <h3 class="font-bold text-xl">IT Intern – Johnson Electric, MI</h3>
         <p>
-            <a href="https://ieeexplore.ieee.org/abstract/document/10825434" target="_blank" class="text-blue-600">IEEE Big Data Conference 2024 - Diabetic Retinopathy Detection</a>
+          Supporting development of Agentic RAG-based applications utilizing OpenAI
+          LLMs and multi-agent systems. Contributed to scalable documentation
+          systems using Docusaurus and participated in backend automation.
+          Assisted in Excel-to-SharePoint data migration workflows using Power Apps
+          and Power Automate.
         </p>
+      </div>
     </section>
-    <section id="deep-learning" class="container py-8">
-    <h2 class="section-title">Research & Deep Learning Models</h2>
-    <p>
-        As part of my research, I have worked extensively with deep learning models, applying them to various healthcare datasets My experience with these models has enabled me to solve complex problems and achieve state-of-the-art results in image processing and classification tasks.
-    </p>
-    <p>
-        Below are some of the key models I have worked on:
-    </p>
-    <ul class="list-disc pl-5">
-        <li><strong>Convolutional Neural Networks (CNN)</strong> </li>
-        <li><strong>ResNet50</strong> </li>
-        <li><strong>VGG19</strong> </li>
-        <li><strong>Vision Transformer (ViT)</strong> </li>
-    </ul>
-</section>    
-        <!-- Projects Section -->
-        <section id="projects" class="container py-8">
-            <h2 class="section-title text-center">Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="card">
-                    <h3 class="font-bold text-xl">Interactive Web-based Quiz Application</h3>
-                    <p>
-                        A web-based interactive quiz application, where the app generates questions along with four options based on the topics specified by the user. The questions are fetched dynamically from the OpenAI API. Developed using React, NodeJS, Tailwind CSS.
-                    </p>
-                </div>
-                <div class="card">
-                    <h3 class="font-bold text-xl">Color Generator Website</h3>
-                    <p>
-                        A user-friendly web application to generate and adjust color palettes for design use, developed with ReactJS and CSS. Users can preview and auto-adjust the colors' intensities and contrasts.
-                    </p>
-                </div>
-		<div class="card">
-                    <h3 class="font-bold text-xl">The visual exploration of Ottawa County Sheriff Incident Responses</h3>
-                    <p>
-                        Using Tableau, performed data visualization using real time sheriff incident responses of Ottawa County
-                    </p>
-                </div>
-                <div class="card">
-                    <h3 class="font-bold text-xl">Hyper-spectral Image Classification</h3>
-                    <p>
-                        A MATLAB project to classify satellite images using supervised machine learning algorithms. Developed an algorithm to extract relevant bands for classification and achieved high accuracy in identifying objects in hyper-spectral images.
-                    </p>
-                </div>
-                <div class="card">
-                    <h3 class="font-bold text-xl">Banking Management System</h3>
-                    <p>
-                        Developed a banking management system using JavaScript for the frontend and MySQL for the backend. The system simplifies monitoring and reduces errors, minimizing the need for paperwork.
-                    </p>
-                </div>
-            </div>
-        </section>
 
+    <section id="education" class="container py-8">
+      <h2 class="section-title">Education</h2>
+      <div class="card">
+        <h3 class="font-bold text-xl">M.S. in Applied Computer Science</h3>
+        <p>
+          Grand Valley State University, Allendale, MI, USA — <strong>GPA: 4.0</strong>
+        </p>
+        <p>Aug 2023 – Apr 2025</p>
+      </div>
+      <div class="card mt-4">
+        <h3 class="font-bold text-xl">B.Tech in Computer Science & Engineering</h3>
+        <p>Assam Don Bosco University, Assam, India — GPA: 3.5</p>
+        <p>Aug 2013 – Jun 2017</p>
+      </div>
+    </section>
 
+    <section id="awards" class="container py-8">
+      <h2 class="section-title">Awards</h2>
+      <div class="card">
+        <ul class="list-disc pl-5 space-y-2">
+          <li>
+            <strong>Dean's List</strong> — Grand Valley State University, Apr 2025: Awarded for maintaining a GPA of 3.8 or higher
+          </li>
+          <li>
+            <strong>I am Grand Valley Award</strong> — Grand Valley State University, Apr 2025: Recognized for leadership contributions to the university community
+          </li>
+          <li>
+            <strong>IEEE Student Travel Award</strong> — NSF, Dec 2024
+          </li>
+        </ul>
+      </div>
+    </section>
 
-
-        <!-- Footer Section -->
-        <footer>
-	
-<section id="contact" class="container py-8">
-    <h2 class="section-title">Contact Me</h2>
-    <ul class="icons">
-        <li>
-            <a href="https://www.linkedin.com/in/munmi-thakuria-95934812b/" class="icon fa fa-linkedin-square
-
-">
-                <span class="label">LinkedIn</span>
-            </a>
-        </li>
-        <li>
-            <a href="https://github.com/munmithakuria" class="icon fa fa-github-square">
-                <span class="label">GitHub</span>
-            </a>
-        </li>
-        <li>
-            <a href="mailto:munmithakuria14@gmail.com" class="icon fa fa-envelope">
-                <span class="label">Email</span>
-            </a>
-        </li>
-    </ul>
-</section>
-
-
-            <p>&copy; 2025 Munmi Thakuria. All rights reserved.</p>
-        </footer>
-    </div>
+    <section id="projects" class="container py-8">
+      <h2 class="section-title text-center">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="card">
+          <span class="badge">Latest Project</span>
+          <h3 class="font-bold text-xl">Interactive Web-based Quiz Application</h3>
+          <p>
+            A dynamic quiz app generating content using OpenAI APIs and ReactJS. Focused on LLM-based content generation.
+          </p>
+        </div>
+        <div class="card">
+          <h3 class="font-bold text-xl">Color Generator Website</h3>
+          <p>
+            A React-based app to create and preview color palettes with real-time customization.
+          </p>
+        </div>
+        <div class="card">
+          <h3 class="font-bold text-xl">Ottawa County Incident Visualization</h3>
+          <p>Visualized sheriff incident data using Tableau for data storytelling and analysis.</p>
+        </div>
+        <div class="card">
+          <h3 class="font-bold text-xl">Hyper-spectral Image Classification</h3>
+          <p>MATLAB-based classification of satellite images using supervised machine learning.</p>
+        </div>
+        <div class="card">
+          <h3 class="font-bold text-xl">Banking Management System</h3>
+          <p>JS/MySQL web app to simplify banking operations and reduce paperwork.</p>
+        </div>
+      </div>
+    </section>
+  </div>
 </body>
-
 </html>
